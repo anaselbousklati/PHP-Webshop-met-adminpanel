@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* MAIN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* login.html */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #7db8fc;
+}
+
+.wrapper .box {
+    width: 400px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.wrapper h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.wrapper .knoppie {
+    color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    margin: 30px 0 10px;
+    font-size: 1.06rem;
+    background: #7db8fc;
+    cursor: pointer;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.form {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 10px;
+    border: #7db8fc solid 1px;
+    outline: none;
+    border-radius: 15px;
+}
+
+form a{
+    font-size: 0.8rem;
+}
+
+.errorMessage {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+/* index.html */
+.navbar {
+    display: flex;
+    padding: 22px 0;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: #7db8fc;
+}
+
+.navbar .logo {
+    color: #fff;
+    margin-left: 1%;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar .links a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+.navbar .links a:hover {
+    color: #000000;
+}
+
+.gebruikersButtons {
+    display: flex;
+    gap: 10px;
+    margin-right: 1%;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: -69px;
+}
+
+.navbar .login-btn {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #275360;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.navbar .login-btn:hover {
+    background: #ddd;
+}
+
+button {
+    border : none;
+    outline : none;
+    background : none;
+    cursor : pointer;
+} 
+
+.centerButton {
+    margin-right: 1%;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.dashboard h2 {
+    font-size: 3rem;
+}
+
+/* gebruikers.php */
+
+.styled-table {
+    margin: 0 auto;
+    font-size: 1.1em;
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.styled-table tbody td {
+    background-color: #fff;
+    color: #666;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.updateButton {
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    background: #7db8fc;
+}
+
+.updateButton:hover {
+    color: #000;
+}
+
+.updateButtonDelete {
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  background: #ff0000;
+}
+
+.updateButtonDelete:hover {
+  color: #000;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #fff;
+}
+.formAdduser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.formAdduser form {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.formAdduser div {
+    margin-bottom: 15px;
+}
+
+.formAdduser input[type="text"],
+.formAdduser input[type="email"],
+.formAdduser input[type="password"],
+.formAdduser select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formAdduser select {
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23262626"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 12px);
+    background-position-y: 50%;
+    background-size: 24px;
+    padding-right: 32px;
+}
+
+.formAdduser button {
+    color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    margin: 30px 0 10px;
+    font-size: 1rem;
+    background: #7db8fc;
+    cursor: pointer;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.formAdduser button:hover {
+    background: #559fef;
+}
+
+/* alert */
+.has-notification .infoAlert {
+    display: block;
+}
+
+.has-notification .successAlert {
+    display: block;
+}
+
+.has-notification .errorAlert {
+    display: block;
+}
+
+.infoAlert,
+.successAlert,
+.errorAlert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #000000;
+    width: 80%;
+    position: relative;
+    padding-left: 40px;
+}
+
+.infoAlert {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.successAlert {
+    background-color: #daf7d9;
+    border-color: #bcf1bc;
+}
+
+.errorAlert {
+    background-color: #f7d9d9;
+    border-color: #f1bcbc;
+}
+
+.infoAlert i,
+.successAlert i,
+.errorAlert i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: inherit;
+}
+
+.producten {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-image {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.product-price {
+    color: #888;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: #7db8fc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 40px;
+}
+
+.buy-button:hover {
+    background-color: #1b4576;
+}
+
+.totaal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.totaal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-button {
+    background-color: #7db8fc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #1b4576;
+}
+
+.order-button:active {
+    background-color: #122d4d;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margintop {
+    margin-top: 25px;
+}
+
+.update-form {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+    margin-right: 10px;
+    outline: none;
+}
+
+.about {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.featured-products {
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.featured-products .products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-products .product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    max-width: 200px;
+}
+
+.featured-products .product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.featured-products p {
+    margin-bottom: 25px;
+}
+
+.featured-products .buy-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.featured-products .buy-btn:hover {
+    background: #555;
+}
+
+.testimonials {
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.testimonials .testimonials-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonials .testimonial {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    max-width: 300px;
+}
+
+footer {
+    background: #7db8fc;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .footer-content {
+    margin-bottom: 1rem;
+}
+
+footer .footer-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials li {
+    margin: 0 0.5rem;
+}
+
+footer .socials img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .footer-bottom {
+    font-size: 0.8rem;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end; 
+    padding-bottom: 20px; 
+}
+
+.button-link {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 220px;
+    margin-bottom: 150px;
+}
+
+.button-link:hover {
+    background-color: #7db8fc;
+}
