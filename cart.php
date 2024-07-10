@@ -1,9 +1,9 @@
 <?php
 session_start();
-include 'db_conn.php';
+include 'admin/db_conn.php';
 
-$user_id = 49;
-$user_email = 'scipto19990@gmail.com';
+$user_id = 1;
+$user_email = 'admin@admin.nl';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['remove'])) {
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
     <nav class="navbar">
-        <a href="dashboard.php" class="logo">
+        <a href="index.php" class="logo">
             <h2>ANAS</h2>
         </a>
         <ul class="links">
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <li><a href="producten.php">Producten</a></li>
         </ul>
         <div class="centerButton">
-            <form action="dashboard.php" method="get">
+            <form action="admin/dashboard.php" method="get">
                 <button type="submit" class="login-btn">Admin Panel</button>
             </form>
         </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db_conn.php';
+include 'admin/db_conn.php';
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
 
@@ -30,7 +30,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 					$_SESSION['user_email'] = $user_email;
 					$_SESSION['user_full_name'] = $user_full_name;
 					$_SESSION['user_type'] = $user_type;
-					header("Location: dashboard.php");
+					header("Location: admin/dashboard.php");
 				} else {
 					header("Location: login.php?error=Onjuiste Wachtwoord&email=$email");
 				}

@@ -3,7 +3,7 @@ session_start();
 include 'db_conn.php';
 
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['user_email'])) {
-    header("Location: login.php");
+    header("Location: ../login.php");
     exit;
 }
 
@@ -74,7 +74,7 @@ $users = $stmt->fetchAll();
 
 <head>
     <title>Index pagina | Anas</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="../style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XmkrJH8wBPk1xM/wmMv7XL3xYLcOsMyfAObt3TSp6AdnOJyrtJLSvuC1M6NzsUGsR/XX0GkrDhKzeMt6ahVdbw==" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -94,7 +94,7 @@ $users = $stmt->fetchAll();
             <?php if ($_SESSION['user_type'] == 'admin') { ?>
                 <a href="add-user.php" class="login-btn">ADD</a>
             <?php } ?>
-            <a href="logout.php" class="login-btn">LOG UIT</a>
+            <a href="../logout.php" class="login-btn">LOG UIT</a>
         </div>
 
     </nav>

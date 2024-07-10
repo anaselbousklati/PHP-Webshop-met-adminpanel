@@ -47,7 +47,7 @@ Veel plezier met het gebruik van je webshop!
 
 ## Ondersteuning
 
-Als je vragen of problemen hebt, neem dan contact op voor meer informatie.
+Als je vragen of problemen hebt, neem dan contact op met de ontwikkelaar voor meer informatie.
 
 ---
 

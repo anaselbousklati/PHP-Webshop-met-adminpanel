@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db_conn.php';
+include 'admin/db_conn.php';
 
 ?>
 
@@ -18,7 +18,7 @@ include 'db_conn.php';
 
 <body>
     <nav class="navbar">
-        <a href="dashboard.php" class="logo">
+        <a href="index.php" class="logo">
             <h2>ANAS</h2>
         </a>
         <ul class="links">

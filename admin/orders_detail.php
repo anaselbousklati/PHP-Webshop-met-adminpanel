@@ -36,14 +36,14 @@ $email = $orders[0]['email'];
 
 <head>
     <title>Bestellingen Details | Anas</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="../style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XmkrJH8wBPk1xM/wmMv7XL3xYLcOsMyfAObt3TSp6AdnOJyrtJLSvuC1M6NzsUGsR/XX0GkrDhKzeMt6ahVdbw==" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <nav class="navbar">
-        <a href="index.php" class="logo">
+        <a href="../index.php" class="logo">
             <h2>ANAS</h2>
         </a>
         <ul class="links">

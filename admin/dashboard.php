@@ -3,7 +3,7 @@ session_start();
 include 'db_conn.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
+    header("Location: ../login.php");
     exit();
 }
 
@@ -21,14 +21,14 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <title>Bestellingen Overzicht | Anas</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="../style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XmkrJH8wBPk1xM/wmMv7XL3xYLcOsMyfAObt3TSp6AdnOJyrtJLSvuC1M6NzsUGsR/XX0GkrDhKzeMt6ahVdbw==" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <nav class="navbar">
-        <a href="index.php" class="logo">
+        <a href="../index.php" class="logo">
             <h2>ANAS</h2>
         </a>
         <ul class="links">
@@ -38,7 +38,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php } ?>
         </ul>
         <div class="centerButton">
-            <form action="logout.php" method="get">
+            <form action="../logout.php" method="get">
                 <button type="submit" class="login-btn">LOG UIT</button>
             </form>
         </div>

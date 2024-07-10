@@ -17,7 +17,7 @@
             <li><a href="producten.php">Producten</a></li>
         </ul>
         <div class="centerButton">
-            <form action="dashboard.php" method="get">
+            <form action="admin/dashboard.php" method="get">
                 <button type="submit" class="login-btn">Admin Panel</button>
             </form>
         </div>

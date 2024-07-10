@@ -3,7 +3,7 @@ session_start();
 include 'db_conn.php';
 
 if (isset($_SESSION['user_id']) || isset($_SESSION['user_email'])) {
-    header("Location: dashboard.php");
+    header("Location: admin/dashboard.php");
     exit;
 }
 if (isset($_POST['check-reset-otp'])) {
